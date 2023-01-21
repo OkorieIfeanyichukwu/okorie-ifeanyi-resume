@@ -17,6 +17,8 @@ const count = ref(0)
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
+    <p>I have tested the HMR and it is working</p>
+
   </div>
 
   <p>
