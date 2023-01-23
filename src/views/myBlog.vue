@@ -1,5 +1,8 @@
 <template>
-  <h2> My Blog posts sha</h2>
+  <div>
+    <h1> My Blog posts sha</h1>
+  </div>
+  
 </template>
 
 <script>

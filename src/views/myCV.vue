@@ -1,5 +1,7 @@
 <template>
-  <h2> My CV page</h2>
+  <div>
+    <h1> My CV page</h1>
+  </div>
 </template>
 
 <script>
