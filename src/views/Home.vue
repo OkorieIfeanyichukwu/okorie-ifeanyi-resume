@@ -6,10 +6,11 @@
         <h2>Electrical Engineering </h2>
         <h2>Student &</h2>
         <h3 id="otherInterest">VueJs Developer</h3>
-        <button>Hire me</button>
+        <a></a><button>Hire me</button>
       </div>
-      
+      <img src="../images/transparent background3.png"/>
     </div>
+    
   </div>
 </template>
 
@@ -22,48 +23,81 @@ export default {
 <style scoped>
  #homeContent{
   position:relative;
-  background-color: blanchedalmond;
-  height:78vh;
+  background-color:rgba(29, 35, 53, 0.952);
+  height:70vh;
+  display: flex;
   border-radius:10px;
-  display:flex;
+  border-top:2px solid #fff;
   text-align: left;
+  padding:1% 4% 1% 4%;
+  
+  margin-top:50px;
  }
  #childContent{
-  background-color:green;
+  background-color:rgba(7, 10, 20, 0.952);
   position:relative;
   margin:auto;
   width:80%;
   height:80%;
   border-radius:10px;
+  display:contents;
+  ;
  }
  #childContent h4{
-  background-color: yellow;
+  color:brown;
   margin-left:5%;
   margin-top:50px;
+  font-size: 2vw;
  }
  #grandChild h2{
-  background-color: yellow;
+  color:#fff;
   margin-left:5%;
-  font-size:3vw;
+  font-size:4vw;
  }
  #grandChild h3{
-  background-color: red;
+  color:#fff;
   margin-left:5%;
-  font-size:3vw;
+  font-size:4vw;
  }
  #grandChild{
-  background-color: blue;
-  position: fixed;
+  background-color:rgba(29, 35, 53, 0.952);
+  position: relative;
   display: block;
-  width:70%;
-  max-height:300px;
+  width:55%;
+  max-height:350px;
+  margin-top:6vw;
  }
+ 
+img{
+  position: relative;
+  margin-top:2vw;
+  width:50%;
+  margin-right:5px;
+  height:400px;
+  max-height: 100%;
+  overflow:hidden;
+}
+
  #grandChild button{
-  color: pink;
+  color: #ccc;
   margin-left:5%;
-  margin-top:3%;
+  margin-top:2px;
   font-size:80%;
+  background-color: brown;
 
 }
 
+
+@media only screen and (max-width:300px ){
+  img{
+  position: relative;
+  margin-top:2vw;
+  margin-right:28px;
+  width:50%;
+  height:400px;
+  max-height: 100%;
+  overflow:hidden;
+}
+
+  }
 </style>

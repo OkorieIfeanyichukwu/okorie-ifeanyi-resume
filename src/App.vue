@@ -32,37 +32,52 @@ export default {
 
 <style scoped>
   #appVueBody{
-    background-color:rgba(96, 101, 117, 0.952);
+    background-color:rgba(7, 10, 20, 0.952);
     position:relative;
     top:0px;
   }
   
   #nav{
-    background-color: rgb(151, 66, 66);
+    background-color:transparent;/* rgba(29, 35, 53, 0.952);*/
     position:relative;
-    top:5px;
+    top:100px;
+    z-index:10;
   }
   #nav .links{
-    border:2px solid red;
+    
     position:relative;
     display: inline-flex;
-    color:green;
+    color:#ccc;
     padding:3px;
-    margin:3px;
-  
+    margin:3px 10px 3px 10px;
+    
   }
   #navContent{
-    background-color: aqua;
+    
     position:relative;
     border-radius: 5px;
+    z-index:9;
   }
   #footerComp{
-    background-color:rgba(29, 35, 53, 0.952);
+    background-color:rgba(7, 10, 20, 0.952);
     position:fixed;
-    border:2px solid red;
     color:brown;
-    bottom:0;
     width:100%;
-    height:50px;
+    height:100px;
+    margin: 30px auto;
   }
+
+  @media only screen and (max-width:300px ){
+    #nav .links{
+    position:relative;
+    display: inline-flex;
+    color:#ccc;
+    padding:3px;
+    margin:3px 1px 3px 1px;
+    
+  }
+
+  }
+    
+
 </style>
