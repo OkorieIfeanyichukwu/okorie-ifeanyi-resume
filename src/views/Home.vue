@@ -8,7 +8,7 @@
         <h3 id="otherInterest">VueJs Developer</h3>
         <a></a><button>Hire me</button>
       </div>
-      <img src="../images/transparent background3.png"/>
+      <!--<img src="../images/transparent background3.png"/>-->
     </div>
     
   </div>
@@ -68,7 +68,7 @@ export default {
   margin-top:6vw;
  }
  
-img{
+/*img{
   position: relative;
   margin-top:2vw;
   width:50%;
@@ -76,7 +76,7 @@ img{
   height:400px;
   max-height: 100%;
   overflow:hidden;
-}
+}*/
 
  #grandChild button{
   color: #ccc;
@@ -89,7 +89,7 @@ img{
 
 
 @media only screen and (max-width:300px ){
-  img{
+  /*img{
   position: relative;
   margin-top:2vw;
   margin-right:28px;
@@ -97,7 +97,7 @@ img{
   height:400px;
   max-height: 100%;
   overflow:hidden;
-}
+}*/
 
   }
 </style>
