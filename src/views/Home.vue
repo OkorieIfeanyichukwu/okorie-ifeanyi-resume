@@ -6,9 +6,12 @@
         <h2>Electrical Engineering </h2>
         <h2>Student &</h2>
         <h3 id="otherInterest">VueJs Developer</h3>
-        <a></a><button>Hire me</button>
+        <router-link to="/contact"><button>Hire me</button></router-link>
+        
       </div>
-      <!--<img src="../images/transparent background3.png"/>-->
+      <div> 
+        <img src="../assets/img/transparent1.png"/>
+      </div>
     </div>
     
   </div>
@@ -29,8 +32,7 @@ export default {
   border-radius:10px;
   border-top:2px solid #fff;
   text-align: left;
-  padding:1% 4% 1% 4%;
-  
+  padding:1% 2% 1% 2%;
   margin-top:50px;
  }
  #childContent{
@@ -41,13 +43,13 @@ export default {
   height:80%;
   border-radius:10px;
   display:contents;
-  ;
  }
  #childContent h4{
   color:brown;
   margin-left:5%;
   margin-top:50px;
   font-size: 2vw;
+  
  }
  #grandChild h2{
   color:#fff;
@@ -68,15 +70,15 @@ export default {
   margin-top:6vw;
  }
  
-/*img{
+img{
   position: relative;
   margin-top:2vw;
-  width:50%;
-  margin-right:5px;
+  width:100%;
+  margin-right:0px;
   height:400px;
   max-height: 100%;
   overflow:hidden;
-}*/
+}
 
  #grandChild button{
   color: #ccc;
@@ -89,15 +91,15 @@ export default {
 
 
 @media only screen and (max-width:300px ){
-  /*img{
+  img{
   position: relative;
   margin-top:2vw;
   margin-right:28px;
-  width:50%;
-  height:400px;
+  width:90%;
+  height:60%;
   max-height: 100%;
   overflow:hidden;
-}*/
+}
 
   }
 </style>
