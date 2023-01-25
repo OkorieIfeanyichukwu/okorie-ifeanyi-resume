@@ -23,14 +23,15 @@
       </div>
       <div id="gridRight">
         <div id="right-column">
-            <p>Ifeanyichukwu</p>
-            <p>Okorie</p>
-            <p>Electrical Engineering</p>
-        </div>
+            <h1 id="name">Ifeanyichukwu Okorie</h1>
+            <h3 id="course">Electrical Engineering Student</h3>
+            <h4 id="side">& VueJS Developer</h4>
+        </div> 
         <div id="right-column2">
             <article class="container2">
                 <section class="iconsndate">
-                    <i class="icons">&#128110;</i>
+                    <!-- Add the style and icon you want using the String format -->
+                    <font-awesome-icon icon="fa-solid fa-user " size="2x" class="icons" shake />   
                 </section>
                 <section class="describe">
                     <h2>About Me</h2>
@@ -44,7 +45,8 @@
             </article>
             <article class="container2">
                 <section class="iconsndate">
-                    <i class="icons">&#128110;</i>
+                     <!-- Add the style and icon you want using the String format -->
+                    <font-awesome-icon icon="fa-solid fa-user-tie" size="2x" flip class="icons" />
                     <h3>2019-present</h3>
                 </section>
                 <section class="describe">
@@ -64,7 +66,8 @@
             </article>
             <article class="container2">
                 <section class="iconsndate">
-                    <i class="icons">&#128110;</i>
+                    <!-- Add the style and icon you want using the Array format -->
+                    <font-awesome-icon :icon="['fas', 'graduation-cap']" size="2x" bounce class="icons" />
                     <h3>2016-present</h3>
                 </section>
                 <section class="describe">
@@ -78,7 +81,8 @@
             </article>
             <article class="container2">
                 <section class="iconsndate">
-                    <i class="icons">&#128110;</i>
+                    <!-- Add the style and icon you want using the String format -->
+                    <font-awesome-icon icon="fa-solid fa-person-chalkboard" beat size="2x" class="icons" />
                     <h3>10/09/2019-24/09/2019</h3>
                 </section>
                 <section class="describe">
@@ -146,10 +150,12 @@ export default {
 #gridLeft{
 border:2px solid black;
 background-color: rgb(209, 189, 189);
+border-radius:10px;
 
 }
 #gridRight{
   background-color: #bbb;
+  border-radius:20px;
 }
 
 
@@ -157,12 +163,24 @@ background-color: rgb(209, 189, 189);
 
 #right-column{
         background:#000111;
-        padding:10px 0px 15px 15%;
+        padding:10px 0px 15px 30%;
     }
-#right-column p{
-        color:#ffffff;
-        font-weight:500npm run servepx;
-    }
+
+#right-column h1{
+    color:red;
+    font-size: 3vw;
+    text-align:left;
+}
+#right-column h3{
+    color:red;
+    font-size: 2vw;
+    text-align:left;
+}
+#right-column h4{
+    color:red;
+    text-align:left;
+    font-size: 1.5vw;
+}
 .container2{
         display:inline-flex;
         background: pink;
@@ -187,6 +205,7 @@ background-color: rgb(209, 189, 189);
     position:relative;
     top:20px;
 }
+
 
 @media only screen and (max-width:800px){
   #resumeBody{
