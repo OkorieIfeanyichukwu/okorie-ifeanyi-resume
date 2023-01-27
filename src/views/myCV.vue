@@ -47,7 +47,7 @@
                 <section class="iconsndate">
                      <!-- Add the style and icon you want using the String format -->
                     <font-awesome-icon icon="fa-solid fa-user-tie" size="2x" flip class="icons" />
-                    <h3>2019-present</h3>
+                    <h4>2019-present</h4>
                 </section>
                 <section class="describe">
                     <h2>Experience</h2>
@@ -61,14 +61,31 @@
                     <p class="description">Traced for Car Battery discharge while vehicle is off.
                     </p>
                     <p class="description">Repaired faults in electrical fence</p>
-                    <p class="description">next</p>
+                    <p class="description">And More.</p>
+                </section>
+            </article>
+            <article class="container2">
+                <section class="iconsndate">
+                    <h4>10-28/08/2019</h4>
+                </section>
+                <section class="describe">
+                    
+                    <h3>Megawatts Nigeria Limited | Intern Engineer
+                    On Site</h3>
+                    <p class="description">I supervised the refurbishment of a building's
+                    electrical installations and replacements.
+                    I ensured a safe working environment and that the
+                    technicians observe the basic electrical installation
+                    rules and guidelines..</p>
+                    <p class="description">Role : : Part of the team to provide 5 volts power supply
+                    for the project</p>
                 </section>
             </article>
             <article class="container2">
                 <section class="iconsndate">
                     <!-- Add the style and icon you want using the Array format -->
                     <font-awesome-icon :icon="['fas', 'graduation-cap']" size="2x" bounce class="icons" />
-                    <h3>2016-present</h3>
+                    <h4>2016-present</h4>
                 </section>
                 <section class="describe">
                     <h2>Education</h2>
@@ -76,17 +93,37 @@
                     Engineering</h3>
                     <p class="description">Pursuing with a current CGPA of 4.33</p>
                     <p class="description">Interested in Power, Electronics and control systems</p>
-                    <p class="description">next</p>
+                    
                 </section>
             </article>
+            
             <article class="container2">
                 <section class="iconsndate">
                     <!-- Add the style and icon you want using the String format -->
                     <font-awesome-icon icon="fa-solid fa-person-chalkboard" beat size="2x" class="icons" />
-                    <h3>10/09/2019-24/09/2019</h3>
+                    <h4>5-29/06/2022</h4>
                 </section>
                 <section class="describe">
                     <h2>Projects</h2>
+                    <h3>Personal Project | Design And Construction Of
+                    Remote Controller</h3>
+                    <p class="description">A six channel wireless controller utilizing Arduino as
+                    the microcontroller and nRF24l01 as the
+                    communication module between the transmitter and
+                    receiver.
+                    The controller is capable of controlling locomotive
+                    devices wirelessly up to a distance of 1000meters
+                    apart with a power amplifier attached to the nRF24
+                    communication module..</p>
+                    <p class="description">My Role : Personal Project.</p>
+                </section>
+            </article>
+            <article class="container2">
+                <section class="iconsndate">
+                    <h4>10-24/09/2019</h4>
+                </section>
+                <section class="describe">
+                    
                     <h3>UNILAG Engineering Faculty | Audible Water
                     Detector</h3>
                     <p class="description">The circuit detects the water level in a tank. The LED
@@ -96,9 +133,10 @@
                     vero board.</p>
                 </section>
             </article>
+
             <article class="container2">
                 <section class="iconsndate">
-                    <h3>10/08/2019-28/08/2019</h3>
+                    <h4>10-28/08/2019</h4>
                 </section>
                 <section class="describe">
                     
@@ -163,47 +201,51 @@ border-radius:10px;
 
 #right-column{
         background:#000111;
-        padding:10px 0px 15px 30%;
+        padding:10px 0px 15px 12%;
     }
 
 #right-column h1{
-    color:red;
+    color:#fff;
     font-size: 3vw;
     text-align:left;
 }
 #right-column h3{
-    color:red;
+    color:#fff;
     font-size: 2vw;
     text-align:left;
 }
 #right-column h4{
-    color:red;
+    color:#fff;
     text-align:left;
     font-size: 1.5vw;
 }
 .container2{
         display:inline-flex;
-        background: pink;
+        
         height: auto;
         padding:5% 0%;
         text-align:center;
     }
 .container2 .iconsndate{
-        background:green;
+        
         width:30%;
     }
 .container2 .describe{
     display:block;
-    background:purple;
+    
     width:70%;
     text-align:left;
 }
 .description{
-    background:red;
+    color:#333;
 }
 .icons{
     position:relative;
-    top:20px;
+    top:8px;
+}
+.iconsndate h4{
+    margin-top:28px;
+    font-size:1.7vw;
 }
 
 
@@ -219,6 +261,10 @@ border-radius:10px;
   display: grid;
   grid-template-columns: 35% 65%;
   
+}
+.iconsndate h4{
+    margin-top:28px;
+    font-size:2.1vw;
 }
 }
 @media only screen and (max-width:700px){
