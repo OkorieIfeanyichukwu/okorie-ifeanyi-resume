@@ -2,24 +2,43 @@
   <div id="CVBody">
     <div id="resumeBody">
       <div id="gridLeft">
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
-        <li>Electrical projects</li>
-        <li>Vue Projects</li>
+        <div id="profilePix"><br/>
+            <section id="pix">
+                <img src="../assets/img/transparent1.png"/>
+            </section>
+            <br/>
+        </div>
+        <div id="paddingLeft">
+            <article class="headUnderline">
+                <h2>Contact Me</h2>
+                <hr/>
+                <section class="content">
+                    <div class="leftGridLeft">
+                    <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-phone" style="color:white;" transform="shrink-5"/>
+                    </font-awesome-layers>
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6>+2349032173147</h6>
+                    </div>
+
+                </section>
+                <section class="content">
+                    <div class="leftGridLeft">
+                        <!-- Add the style and icon you want using the String format -->
+                    <font-awesome-icon icon="fa-solid fa-user-tie" flip />
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6>+2349032173147</h6>
+                    </div>
+
+                </section>
+            </article>
+            
+        </div>
+        
+        
       </div>
       <div id="gridRight">
         <div id="right-column">
@@ -96,13 +115,16 @@
                     
                 </section>
             </article>
+
+            
+
             
             <article class="container2">
-                <section class="iconsndate">
+                <div class="iconsndate">
                     <!-- Add the style and icon you want using the String format -->
                     <font-awesome-icon icon="fa-solid fa-person-chalkboard" beat size="2x" class="icons" />
                     <h4>5-29/06/2022</h4>
-                </section>
+                </div>
                 <section class="describe">
                     <h2>Projects</h2>
                     <h3>Personal Project | Design And Construction Of
@@ -164,23 +186,26 @@ export default {
 <style scoped>
 #CVBody{
   position:relative;
-  background-color:green;/*rgba(29, 35, 53, 0.952);*/
+  background-color:rgba(29, 35, 53, 0.952);
+  height:80vh;
+  display: flex;
   border-radius:10px;
   border-top:2px solid #fff;
-  padding:1% 2% 1% 2%;
-  margin-top:50px;
-  display:block;
-  
+  border-bottom:2px solid #fff;
+  text-align: left;
+  padding:0% 2% 0% 2%;
+  margin-top:10px;
+
 }
 
 #resumeBody{
   Position:relative;
-  background-color:blue;
-  width:80%;
-  margin:40px auto 0px auto;
-  max-height:400px;
+  background-color:red;
+  width:100%;
+  margin:0px auto 0px auto;
+  min-height:100%;
+  max-height:100%;
   overflow-y: scroll;
-
   display: grid;
   grid-template-columns: 35% 65%;
   
@@ -189,6 +214,7 @@ export default {
 border:2px solid black;
 background-color: rgb(209, 189, 189);
 border-radius:10px;
+padding:0;
 
 }
 #gridRight{
@@ -200,8 +226,8 @@ border-radius:10px;
 
 
 #right-column{
-        background:#000111;
-        padding:10px 0px 15px 12%;
+    background:#000111;
+    padding:10px 0px 15px 12%;
     }
 
 #right-column h1{
@@ -220,20 +246,18 @@ border-radius:10px;
     font-size: 1.5vw;
 }
 .container2{
-        display:inline-flex;
-        
+        position: relative;
         height: auto;
         padding:5% 0%;
         text-align:center;
+        display:grid;
+        grid-template-columns: 30% 70%;
     }
 .container2 .iconsndate{
-        
-        width:30%;
+    background-color: #bbb;
     }
 .container2 .describe{
     display:block;
-    
-    width:70%;
     text-align:left;
 }
 .description{
@@ -254,10 +278,10 @@ border-radius:10px;
   Position:relative;
   background-color:blue;
   width:85%;
-  margin:40px auto 0px auto;
-  max-height:400px;
-  overflow-y: scroll;
-
+  margin:0px auto 0px auto;
+  max-height:100%;
+  min-height:100%;
+  overflow-y: scroll;  
   display: grid;
   grid-template-columns: 35% 65%;
   
@@ -272,8 +296,9 @@ border-radius:10px;
   Position:relative;
   background-color:blue;
   width:90%;
-  margin:40px auto 0px auto;
-  max-height:400px;
+  margin:0px auto 0px auto;
+  max-height:100%;
+  min-height:100%;
   overflow-y: scroll;
 
   display: grid;
@@ -286,8 +311,9 @@ border-radius:10px;
   Position:relative;
   background-color:blue;
   width:100%;
-  margin:40px auto 0px auto;
-  max-height:400px;
+  margin:0px auto 0px auto;
+  max-height:100%;
+  min-height:100%;
   overflow-y: scroll;
 
   display: grid;
@@ -296,4 +322,140 @@ border-radius:10px;
 }
 }
 
+/* styles for the left grid */
+
+#profilePix{
+    background-color:red;
+    width:100%;
+    max-width: 100%;
+    position:relative;
+    display: block;
+    margin-top:0px;
+    
+}
+
+#pix{
+    background-color: aqua;
+    position:relative;
+    width:50%;
+    height:13.5vw;
+    overflow:hidden;
+    border-radius:80%;
+    margin:auto;
+}
+
+
+#pix img{
+    position:relative;
+    border:1px solid #333;
+    width:100%;
+    height:100%;
+}
+
+
+#paddingLeft{
+    position:relative;
+    padding-left:10%;
+}
+
+.headUnderline{
+    background-color:blue;
+}
+h2{
+    font-size:2vw;
+    font-weight: 900;
+}
+
+
+hr{
+    background-color:#000;
+    height:5px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding:0px;
+}
+
+.leftGridLeft{
+    background-color:green;
+}
+.rightGridLeft{
+    background-color:pink;
+}
+.rightGridLeft h6{
+    background-color:orange;
+    margin:0px;
+}
+
+
+
+@media only screen and (max-width:900px){
+    #profilePix{
+    background-color:red;
+    width:100%;
+    max-width: 100%;
+    position:relative;
+    display: block;
+    margin-top:0px;
+    
+}
+
+#pix{
+    background-color: aqua;
+    position:relative;
+    width:50%;
+    height:14.5vw;
+    overflow:hidden;
+    border-radius:80%;
+    margin:auto;
+}
+
+}
+
+@media only screen and (max-width:700px){
+    #profilePix{
+    background-color:red;
+    width:100%;
+    max-width: 100%;
+    position:relative;
+    display: block;
+    margin-top:0px;
+    
+}
+
+#pix{
+    background-color: aqua;
+    position:relative;
+    width:50%;
+    height:16vw;
+    overflow:hidden;
+    border-radius:80%;
+    margin:auto;
+}
+
+}
+@media only screen and (max-width:500px){
+    #profilePix{
+    background-color:red;
+    width:100%;
+    max-width: 100%;
+    position:relative;
+    display: block;
+    margin-top:0px;
+    
+}
+
+#pix{
+    background-color: aqua;
+    position:relative;
+    width:50%;
+    height:17vw;
+    overflow:hidden;
+    border-radius:80%;
+    margin:auto;
+}
+
+}
 </style>

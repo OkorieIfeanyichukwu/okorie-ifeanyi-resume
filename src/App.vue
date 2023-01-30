@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
   #appVueBody{
-    background-color:rgba(7, 10, 20, 0.952);
+    background-color:#222;
     position:relative;
     top:0px;
   }
@@ -40,7 +40,7 @@ export default {
   #nav{
     background-color:transparent;/* rgba(29, 35, 53, 0.952);*/
     position:relative;
-    top:100px;
+    top:5px;
     z-index:10;
   }
   #nav .links{
@@ -63,8 +63,8 @@ export default {
     position:fixed;
     color:brown;
     width:100%;
-    height:100px;
-    margin: 30px auto;
+    margin: 0px auto;
+    height:10%;
   }
 
   @media only screen and (max-width:300px ){
