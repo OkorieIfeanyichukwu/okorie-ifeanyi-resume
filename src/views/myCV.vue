@@ -9,33 +9,117 @@
             <br/>
         </div>
         <div id="paddingLeft">
-            <article class="headUnderline">
+            <article class="headUnderline1">
                 <h2>Contact Me</h2>
                 <hr/>
                 <section class="content">
                     <div class="leftGridLeft">
                     <font-awesome-layers>
                         <font-awesome-icon icon="fa-solid fa-circle" />
-                        <font-awesome-icon icon="fa-solid fa-phone" style="color:white;" transform="shrink-5"/>
+                        <font-awesome-icon icon="fa-solid fa-mobile-android-alt" style="color:white;" transform="shrink-5"/>
                     </font-awesome-layers>
                     </div>
                     <div class="rightGridLeft">
-                        <h6>+2349032173147</h6>
+                        <h6 class="texts">+2349032173147</h6>
                     </div>
 
                 </section>
                 <section class="content">
                     <div class="leftGridLeft">
-                        <!-- Add the style and icon you want using the String format -->
-                    <font-awesome-icon icon="fa-solid fa-user-tie" flip />
+                        <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-envelope-open" style="color:white;" transform="shrink-5"/>
+                    </font-awesome-layers>
                     </div>
                     <div class="rightGridLeft">
-                        <h6>+2349032173147</h6>
+                        <h6 class="texts">okorieifeanyi1010@gmail.com</h6>
+                    </div>
+
+                </section>
+                <section class="content">
+                    <div class="leftGridLeft">
+                        <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-location-dot" style="color:white;" transform="shrink-5"/>
+                        </font-awesome-layers>
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6 class="texts">Ogunbiyi street, Iwaya, Onike, Yaba, Lagos</h6>
+                    </div>
+
+                </section>
+                <section class="content">
+                    <div class="leftGridLeft">
+                        <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-network-wired" style="color:white;" transform="shrink-5"/>
+                        </font-awesome-layers>
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6 class="texts"><a href="https://okorie-ifeanyichukwu.netlify.app">My Website</a></h6>
                     </div>
 
                 </section>
             </article>
             
+
+            <article class="headUnderline">
+                <h2>Social Profile</h2>
+                <hr/>
+                <section class="content">
+                    <div class="leftGridLeft">
+                    <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-link" style="color:white;" transform="shrink-5"/>
+                    </font-awesome-layers>
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6 class="texts"><a href="https://linkedin.com/in/ifeanyiokorie/">My LinkedIn Profile</a></h6>
+                    </div>
+
+                </section>
+                <section class="content">
+                    <div class="leftGridLeft">
+                        <font-awesome-layers>
+                        <font-awesome-icon icon="fa-solid fa-circle" />
+                        <font-awesome-icon icon="fa-solid fa-envelope-open" style="color:white;" transform="shrink-5"/>
+                    </font-awesome-layers>
+                    </div>
+                    <div class="rightGridLeft">
+                        <h6 class="texts"><a href="https://Okorie-Ifeanyichukwu.github.com">My Github Profile</a></h6>
+                    </div>
+
+                </section>
+            </article>
+
+            <article class="headUnderline">
+                <h2>Other Info</h2>
+                <hr/>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <p class="texts">MATLAB, Circuit
+                    design(Proteus/EasyEDA),
+                    AutoCAD (Basics),
+                    Programming
+                    (C++/Python/Javascript),
+                    Microprocessors
+                    (Arduino),Good communication
+                    skills, innovative and critical
+                    thinking.</p>
+                </section>
+                <br/>
+                <section id="skills">
+                    <h2>Language</h2>
+                    <p class="texts">English, Igbo</p>
+                </section>
+                <br/>
+                <section id="skills">
+                    <h2>Interests</h2>
+                    <p class="texts">Control Systems, Power Systems, Web Development, Electrical Designs</p>
+                </section>
+                <br/>
+            </article>
+
         </div>
         
         
@@ -325,7 +409,7 @@ padding:0;
 /* styles for the left grid */
 
 #profilePix{
-    background-color:red;
+    
     width:100%;
     max-width: 100%;
     position:relative;
@@ -335,7 +419,7 @@ padding:0;
 }
 
 #pix{
-    background-color: aqua;
+    background-color:#eee;
     position:relative;
     width:50%;
     height:13.5vw;
@@ -359,8 +443,13 @@ padding:0;
 }
 
 .headUnderline{
-    background-color:blue;
+    
+    margin-top:10%;
 }
+.headUnderline1{
+    margin-top:10%;
+}
+
 h2{
     font-size:2vw;
     font-weight: 900;
@@ -378,22 +467,21 @@ hr{
     padding:0px;
 }
 
-.leftGridLeft{
-    background-color:green;
-}
-.rightGridLeft{
-    background-color:pink;
-}
+
+
 .rightGridLeft h6{
-    background-color:orange;
     margin:0px;
+}
+
+.texts{
+    font-size: 2vw;
 }
 
 
 
 @media only screen and (max-width:900px){
     #profilePix{
-    background-color:red;
+    
     width:100%;
     max-width: 100%;
     position:relative;
@@ -403,7 +491,7 @@ hr{
 }
 
 #pix{
-    background-color: aqua;
+    
     position:relative;
     width:50%;
     height:14.5vw;
@@ -414,9 +502,15 @@ hr{
 
 }
 
+@media only screen and (min-width:700px){
+    #skills{
+        width:70%;
+    }
+}
+
 @media only screen and (max-width:700px){
     #profilePix{
-    background-color:red;
+    
     width:100%;
     max-width: 100%;
     position:relative;
@@ -426,7 +520,7 @@ hr{
 }
 
 #pix{
-    background-color: aqua;
+    
     position:relative;
     width:50%;
     height:16vw;
@@ -438,7 +532,7 @@ hr{
 }
 @media only screen and (max-width:500px){
     #profilePix{
-    background-color:red;
+    
     width:100%;
     max-width: 100%;
     position:relative;
@@ -448,7 +542,7 @@ hr{
 }
 
 #pix{
-    background-color: aqua;
+    
     position:relative;
     width:50%;
     height:17vw;

@@ -43,14 +43,29 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 library.add(faCircle)
 
 /* import specific icons */
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
-library.add(faPhone)
+library.add(faLink)
 
 /* import specific icons */
-import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
-library.add(faLocation)
+library.add(faLocationDot)
+
+/* import specific icons */
+import { faNetworkWired} from '@fortawesome/free-solid-svg-icons'
+/* add icons to the library */
+library.add(faNetworkWired)
+
+/* import specific icons */
+import { faMobileAndroidAlt } from '@fortawesome/free-solid-svg-icons'
+/* add icons to the library */
+library.add(faMobileAndroidAlt)
+
+/* import specific icons */
+import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
+/* add icons to the library */
+library.add(faEnvelopeOpen)
 
 
 

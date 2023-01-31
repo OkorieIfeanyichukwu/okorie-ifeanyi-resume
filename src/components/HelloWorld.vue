@@ -1,42 +1,62 @@
-<script setup>
-import { ref } from 'vue'
+<script >
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-    <p>I have tested the HMR and it is working, so relax,that was fast</p>
-
+  <div id="appVueBody">
+    <div id="nav">
+      <router-link class="links" to="/">Home</router-link>
+      <router-link class="links" to="/myCV">My CV</router-link>
+      <router-link class="links" to="/myBlog">Blog posts</router-link>
+      <router-link class="links" to="/projects">Projects</router-link>
+    </div>
+    <div id="navContent">
+      <router-view></router-view>
+    </div>
+    
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
+#appVueBody{
+    background-color:#222;
+    position:relative;
+    top:0px;
+  }
+  
+  #nav{
+    background-color:transparent;/* rgba(29, 35, 53, 0.952);*/
+    position:relative;
+    top:5px;
+    z-index:10;
+  }
+  #nav .links{
+    
+    position:relative;
+    display: inline-flex;
+    color:#ccc;
+    padding:3px;
+    margin:3px 10px 3px 10px;
+    
+  }
+  #navContent{
+    position:relative;
+    border-radius: 5px;
+    z-index:9;
+  }
+  
+
+  @media only screen and (max-width:300px ){
+    #nav .links{
+    position:relative;
+    display: inline-flex;
+    color:#ccc;
+    padding:3px;
+    margin:3px 1px 3px 1px;
+    
+  }
+
+  }
+    
 </style>
